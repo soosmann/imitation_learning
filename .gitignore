@@ -1,0 +1,25 @@
+__pycache__/
+*.pyc
+.git/
+.venv/
+*.egg-info/
+wandb/
+.vscode/
+.idea/
+.DS_Store
+.ruff_cache
+
+# Data artifacts
+/data/
+checkpoints/
+videos/
+*.zip
+exp/
+
+# Modal logs/artifacts
+modal_volume/
+
+# Only the two selected demo videos belong in the repository.
+*.mp4
+!/assets/rollouts/flow_epoch400_ep0.mp4
+!/assets/rollouts/mse_epoch400_ep0.mp4
