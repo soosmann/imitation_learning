@@ -22,6 +22,14 @@ Evaluation episode 0 after 400 training epochs (training seed 42):
 Only these two selected videos are included in the repository; generated training
 and inference videos are excluded by `.gitignore`.
 
+The corresponding experiment directories are included with their configurations,
+normalization statistics, best-model weights, metrics, and training plots:
+
+- `exp/seed_42_20261028_220725/` (flow matching)
+- `exp/seed_42_20261028_220006/` (MSE)
+
+Their `videos/` subdirectories remain excluded.
+
 ## Setup
 
 Use Python 3.11 (the version in `.python-version`) and `uv`. Run all commands from
@@ -162,6 +170,7 @@ src/
 └── plot_training.py    # Training loss and evaluation reward plots
 ```
 
-`data/`, `exp/`, virtual environments, and generated artifacts are excluded from
-Git by `.gitignore`. Commit `pyproject.toml`, `uv.lock`, and `.python-version`
+`data/`, virtual environments, generated videos, and new experiment directories
+are excluded from Git by `.gitignore`. The two example experiments listed above
+are explicitly included. Commit `pyproject.toml`, `uv.lock`, and `.python-version`
 alongside the source to preserve the dependency configuration.

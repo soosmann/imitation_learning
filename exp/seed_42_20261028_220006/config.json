@@ -1,0 +1,24 @@
+{
+  "data_dir": "data",
+  "policy_type": "mse",
+  "flow_num_steps": 10,
+  "chunk_size": 8,
+  "batch_size": 128,
+  "lr": 0.0003,
+  "weight_decay": 0.0,
+  "hidden_dims": [
+    256,
+    256,
+    256
+  ],
+  "num_epochs": 400,
+  "eval_interval": 10,
+  "num_video_episodes": 3,
+  "video_size": [
+    256,
+    256
+  ],
+  "video_every_n_steps": 50,
+  "seed": 42,
+  "exp_name": null
+}

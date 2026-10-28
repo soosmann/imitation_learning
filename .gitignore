@@ -14,7 +14,11 @@ wandb/
 checkpoints/
 videos/
 *.zip
-exp/
+
+# Include the two published experiments, excluding their video directories.
+/exp/*
+!/exp/seed_42_20261028_220006/
+!/exp/seed_42_20261028_220725/
 
 # Modal logs/artifacts
 modal_volume/
